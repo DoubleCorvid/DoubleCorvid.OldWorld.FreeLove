@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <Reference Include="TenCrowns.Gamecore">
+      <HintPath>lib/TenCrowns.GameCore.dll</HintPath>
+    </Reference>
+
+    <Reference Include="Mohawk.SystemCore">
+      <HintPath>lib/Mohawk.SystemCore.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine">
+      <HintPath>lib/UnityEngine.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>lib/UnityEngine.Core.dll</HintPath>
+    </Reference>
+    
+    <Reference Include="UnityEngine.UI">
+      <HintPath>lib/UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.4.2" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net481</TargetFramework>
+  </PropertyGroup>
+
+</Project>
