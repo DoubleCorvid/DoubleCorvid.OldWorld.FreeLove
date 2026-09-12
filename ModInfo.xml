@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <description>(insert mod description here... this mod was created with the event browser)</description>
+  <modioID>0</modioID>
+  <modioFileID>0</modioFileID>
+  <tags />
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies />
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

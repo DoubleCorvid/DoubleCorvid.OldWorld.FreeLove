@@ -1,12 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using DoubleCorvid.OldWorld.ExpandedMarriage;
 using HarmonyLib;
 using TenCrowns.AppCore;
 using TenCrowns.GameCore;
 using UnityEngine;
 
-namespace DoubleCorvid.OldWorld.ExpandedMarriage {
+namespace DoubleCorvid.OldWorld.ExpandedGender {
     public class ExpandedMarriage : ModEntryPointAdapter {
         public const string HarmonyId = "DoubleCorvid.ExpandedMarriage.Patches";
         
