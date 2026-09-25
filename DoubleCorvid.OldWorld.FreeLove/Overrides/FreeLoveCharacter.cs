@@ -4,7 +4,7 @@ using TenCrowns.GameCore;
 
 namespace DoubleCorvid.OldWorld.FreeLove.Overrides {
     public class FreeLoveCharacter : Character {
-        public virtual bool isStraight () => !(isBisexual () || isGay ());
+        public virtual bool IsStraight () => !(isBisexual () || isGay ());
 
         public override bool canMarry(CharacterType eCharacter, List<object> lSubjectsPrevious, bool bPolygamy = false) {
             using (new UnityProfileScope("Character.canMarry"))
@@ -23,7 +23,7 @@ namespace DoubleCorvid.OldWorld.FreeLove.Overrides {
                     if (infos().character(eCharacter).meGender == getGender()) {
                         #region Modified code
                         var pSuitor = FindFreeLoveCharacter (eCharacter);
-                         if (isStraight () && getGender () == pSuitor.getGender ()) {
+                        if (IsStraight () && getGender () == pSuitor.getGender ()) {
                             return false;
                         }
 
@@ -66,7 +66,7 @@ namespace DoubleCorvid.OldWorld.FreeLove.Overrides {
             }
 
             #region Modified code
-            if (isStraight () && getGender () == pSuitor.getGender ()) {
+            if (IsStraight () && getGender () == pSuitor.getGender ()) {
                 return false;
             }
 
@@ -137,10 +137,11 @@ namespace DoubleCorvid.OldWorld.FreeLove.Overrides {
         {
             Character pBestCharacter = getBestMarriageCandidate();
             if (pBestCharacter == null)
-            {  
+            {
                 #region Modified Code
                 GenderType eSuitorGender = GetSuitorGender();
                 #endregion
+
                 int iSuitorAge = randomSuitorAge(false);
                 if (iSuitorAge >= 0)
                 {
@@ -158,12 +159,15 @@ namespace DoubleCorvid.OldWorld.FreeLove.Overrides {
                         }
                         pBestCharacter.fillValues(0, TraitType.NONE, traitScope.Value);
                     }
-                }
+
+                    #region Added Code
+                    pBestCharacter.addTrait (GetRequiredSuitorOrientation (), true);
+                    #endregion
+                }    
             }
 
             if (pBestCharacter != null)
             {
-
                 marry(pBestCharacter, bDowry);
 
                 player().pushLogData(() => TextManager.TEXT("TEXT_GAME_CHARACTER_MARRIAGE", HelpText.buildCharacterLinkVariable(this, player(), pPlayerRelation: player()), HelpText.buildCharacterLinkVariable(pBestCharacter, player(), pPlayerRelation: player())), GameLogType.CHARACTER_MARRIAGE, getID());
@@ -182,6 +186,21 @@ namespace DoubleCorvid.OldWorld.FreeLove.Overrides {
             }
 
             return getGenderOpposite ();
+        }
+
+        protected virtual TraitType GetRequiredSuitorOrientation () {
+            if (IsStraight ()) {
+                return TraitType.NONE;
+            }
+
+            var roll = UnityEngine.Random.Range (0, 1);
+
+            if (roll == 0) {
+                return infos().Globals.BISEXUAL_TRAIT;
+            }
+            else {
+                return infos().Globals.GAY_TRAIT;
+            }
         }
     }
 }
