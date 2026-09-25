@@ -1,4 +1,4 @@
-# DC's Expanded Gender
+# DC's Free Love
 Because queer folks have existed for as long as folks have existed.
 
 ## Description
