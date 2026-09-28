@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Entry>
+    <zType>TEXT_MISSION_CHANGE_ORIENTATION</zType>
+    <en-US>Change Orientation</en-US>
+  </Entry>
+
+  <Entry>
+    <zType>TEXT_MISSIONRESULT_CHANGE_ORIENTATION</zType>
+    <en-US>Change Orientation</en-US>
+  </Entry>
+
+  <Entry>
+    <zType>TEXT_EVENTSTORY_CHANGE_ORIENTATION_TITLE</zType>
+    <en-US>Change Orientation</en-US>
+  </Entry>
+
+  <Entry>
+    <zType>TEXT_EVENTSTORY_CHANGE_ORIENTATION</zType>
+    <en-US>Change Orientation</en-US>
+  </Entry>
+
+  <Entry>
+    <zType>TEXT_EVENTOPTION_CHANGE_ORIENTATION_GAY</zType>
+    <en-US>Become gay.</en-US>
+  </Entry>
+
+  <Entry>
+    <zType>TEXT_EVENTOPTION_CHANGE_ORIENTATION_BISEXUAL</zType>
+    <en-US>Become bisexual.</en-US>
+  </Entry>
+
+  <Entry>
+    <zType>TEXT_EVENTOPTION_CHANGE_ORIENTATION_STRAIGHT</zType>
+    <en-US>Become straight.</en-US>
+  </Entry>
+
+  <Entry>
+    <zType>TEXT_EVENTOPTION_CHANGE_ORIENTATION_CANCEL</zType>
+    <en-US>Leave everything as is.</en-US>
+  </Entry>
+</Root>

@@ -23,7 +23,33 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <TargetFramework>net481</TargetFramework>
+    <TargetFramework>net481</TargetFramework>    
+    <PackageId>DoubleCorvid.OldWorld.FreeLove</PackageId>
+    <Title>DoubleCorvid's Free Love</Title>
+    <Version>0.1.0</Version>
+    <Authors>DoubleCorvid</Authors>
+    <Company>DoubleCorvid</Company>
+    <Description>Free love, man! Because queer folks have existed for as long as folks have existed.</Description>
+    <Copyright>Copyright © DoubleCorvid 2026</Copyright>
+    <PackageProjectUrl>https://github.com/DoubleCorvid/DoubleCorvid.OldWorld.FreeLove</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/DoubleCorvid/DoubleCorvid.OldWorld.FreeLove</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>Game Development; </PackageTags>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

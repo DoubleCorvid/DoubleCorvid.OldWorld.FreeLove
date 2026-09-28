@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Entry>
+    <zType>MISSIONRESULT_CHANGE_ORIENTATION</zType>
+    <Name>TEXT_MISSIONRESULT_CHANGE_ORIENTATION</Name>
+    <bShowTrigger>1</bShowTrigger>
+    <EventTrigger>EVENTTRIGGER_MISSION_FINISHED</EventTrigger>
+  </Entry>
+</Root>

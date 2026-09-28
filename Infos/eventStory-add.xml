@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>EVENTSTORY_CHANGE_ORIENTATION</zType>
+		<Name>TEXT_EVENTSTORY_CHANGE_ORIENTATION_TITLE</Name>
+		<Text>TEXT_EVENTSTORY_CHANGE_ORIENTATION</Text>
+		<zAuthor>DoubleCorvid</zAuthor>
+		<aeSubjects>
+			<zValue>SUBJECT_CHARACTER_US</zValue>
+		</aeSubjects>
+		<aeOptions>
+			<zValue>EVENTOPTION_CHANGE_ORIENTATION_GAY</zValue>
+			<zValue>EVENTOPTION_CHANGE_ORIENTATION_BISEXUAL</zValue>
+			<zValue>EVENTOPTION_CHANGE_ORIENTATION_STRAIGHT_0</zValue>
+			<zValue>EVENTOPTION_CHANGE_ORIENTATION_STRAIGHT_1</zValue>
+			<zValue>EVENTOPTION_CHANGE_ORIENTATION_CANCEL</zValue>
+		</aeOptions>
+		<Trigger>EVENTTRIGGER_MISSION_FINISHED</Trigger>
+		<TriggerData>MISSIONRESULT_CHANGE_ORIENTATION</TriggerData>
+		<iTriggerExtra>0</iTriggerExtra>
+		<iImageSubject>0</iImageSubject>
+		<iWeight>1</iWeight>
+		<iRepeatTurns>0</iRepeatTurns>
+	</Entry>
+</Root>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Entry>
+    <zType>MISSION_CHANGE_ORIENTATION</zType>
+    <Name>TEXT_MISSION_CHANGE_ORIENTATION</Name>
+    <bVisibleCharacter>1</bVisibleCharacter>
+    <bNoPopup>0</bNoPopup>
+    <bEncyclopedia>0</bEncyclopedia>
+    <SubjectCharacter>SUBJECT_LEADER_OR_DESCENDANT</SubjectCharacter>
+    <aiResultDie>
+      <Pair>
+        <zIndex>MISSIONRESULT_CHANGE_ORIENTATION</zIndex>
+        <iValue>1</iValue>
+      </Pair>
+    </aiResultDie>
+    <aiYieldCost></aiYieldCost>
+    <aeSubjectPlayerEnabled>
+      <zValue>SUBJECT_PLAYER_US</zValue>
+    </aeSubjectPlayerEnabled>
+  </Entry>
+</Root>

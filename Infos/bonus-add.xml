@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+    <Entry>
+        <zType>BONUS_CHANGE_ORIENTATION_STRAIGHT_0</zType>
+        <aeRemoveTraits>
+            <zValue>TRAIT_GAY</zValue>
+        </aeRemoveTraits>
+    </Entry>
+    <Entry>
+        <zType>BONUS_CHANGE_ORIENTATION_STRAIGHT_1</zType>
+        <aeRemoveTraits>
+            <zValue>TRAIT_BISEXUAL</zValue>
+        </aeRemoveTraits>
+    </Entry>
+</Root>
